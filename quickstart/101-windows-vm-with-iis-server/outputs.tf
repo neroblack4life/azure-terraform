@@ -7,6 +7,6 @@ output "public_ip_address" {
 }
 
 output "admin_password" {
-  sensitive = true
+  sensitive = false
   value     = azurerm_windows_virtual_machine.main.admin_password
 }
