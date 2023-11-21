@@ -149,7 +149,6 @@ resource "random_password" "password" {
   min_numeric = 1
   min_special = 1
   special     = true
-  result      = true
 }
 
 resource "random_pet" "prefix" {
