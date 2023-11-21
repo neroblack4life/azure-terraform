@@ -8,6 +8,6 @@ output "public_ip_address" {
 
 output "admin_password" {
   sensitive = true
-  # value     = azurerm_windows_virtual_machine.main.admin_password.result
-  value     = random_password.example.result
+  value     = azurerm_windows_virtual_machine.main.admin_password
+  #value     = random_password.example.result
 }
